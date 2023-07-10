@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #e8ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  background-color: #a6f6f1;
+  width: 510px;
+  /* height: 373px; */
+  padding: 5px 25px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  /* box-shadow: 20px 20px 20px grey; */
+}
+
+.container h1 {
+  font-family: Rubik;
+  font-size: 33px;
+  font-weight: 700;
+  text-align: center;
+  user-select: none;
+  letter-spacing: 1px;
+  color: #213e3b;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputs:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inptsss {
+  display: flex;
+  gap: 10px;
+}
+
+.inptsss div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+#small {
+  font-size: 13px;
+  color: #095254;
+}
+
+#inputValue {
+  height: 40px;
+  font-size: 25px;
+  padding: 0 10px;
+  font-weight: 600;
+  font-family: rubik;
+  border: 1px solid #213e3b;
+  border-radius: 12px;
+  background-color: #e8ffff;
+  transition: transform 0.2s;
+  color: #213e3b;
+}
+
+#inputValue:hover,
+#inputValue:focus {
+  outline: none;
+  transform: scale(1.02);
+}
+
+#btn {
+  height: 45px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #213e3b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#btn:hover {
+  background-color: #132322;
+  transform: scale(1.02);
+}
+
+#btn:active {
+  height: 45px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #212121;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.resultss {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+#result {
+  font-family: rubik;
+  color: #213e3b;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#type1,
+#type2 {
+  height: 41px;
+  font-size: 25px;
+  border: 1px solid #213e3b;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  outline: none;
+  padding: 0 10px;
+  color: #213e3b;
+  transition: transform 0.2s;
+  background-color: #e8ffff;
+}
+#type1:hover,
+#type2:hover {
+  transform: scale(1.02);
+}
+
+#type1:focus,
+#type2:focus {
+  height: 41px;
+  font-size: 25px;
+  border: 1px solid #212121;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  outline: none;
+  padding: 0 10px;
+}
+option {
+  height: 40px;
+  color: #213e3b;
+  font-size: 35px;
+  font-family: rubik;
+}
+
+label {
+  font-size: 24px;
+  font-family: rubik;
+  color: #095254;
+  font-weight: 300;
+}
+
+.footer {
+  height: 5vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer p a {
+  text-decoration: none;
+  color: #213e3b;
+}
+
+.footer p a:hover {
+  color: #212121;
+}
+
+@media only screen and (max-width: 575px) {
+  .container {
+    transform: scale(0.95);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    transform: scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .container {
+    transform: scale(0.8);
+  }
+}
